@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      args:
+        - PYTHON_VERSION=${SQ_PYTHON_VERSION}
+    ports:
+      - "80:80"
